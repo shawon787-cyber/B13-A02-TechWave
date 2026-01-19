@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave</title>
+    <link rel="stylesheet" href="./css/input.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bg-[#1a0b2e] border-b border-[rgba(251,207,232,0.3)]">
+            <div class="flex justify-between max-w-[1140px] mx-auto px-3 py-5">
+            <img class="w-40" src="./assets/TechWave.png" alt="">
+             <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <!-- Hamburger Icon -->
+            <label for="menu-toggle" class="md:hidden cursor-pointer text-pink-600 text-3xl">
+                ☰
+            </label>
+            <ul class="hidden md:flex items-center gap-6 text-white text-md">
+                <li><a class="hover:bg-[#fbfdfe]  rounded-sm" href="">About</a></li>
+                <li><a class="hover:bg-[#fbfdfe]  rounded-sm" href="">Episodes</a></li>
+                <li><a class="hover:bg-[#fbfdfe]  rounded-sm" href="">Host</a></li>
+            </ul>
+            <button class="hidden animate-pulse md:block text-white bg-gradient-to-br from-purple-600 via-pink-600 via-orange-400 to-yellow-400 px-6 py-2 rounded-sm font-bold">Subscribe <span>&#8594;</span></button>
+
+            <ul class="hidden peer-checked:flex md:hidden flex-col gap-4 bg-[#1a0b2e] text-sky-500 py-6 w-full fixed top-20 left-1 rounded-sm justify-center pl-8 z-50">
+                <li><a class=" text-white rounded-sm" href="">About</a></li>
+                <li><a class=" text-white rounded-sm" href="">Episodes</a></li>
+                <li><a class=" text-white rounded-sm" href="">Host</a></li>
+                 <button class="w-40 text-white bg-gradient-to-br from-purple-600 via-pink-600 via-orange-400 to-yellow-400 px-6 py-2 rounded-sm font-bold">Subscribe <span>&#8594;</span></button>
+            </ul>
+        </div>
+        </nav>
+                         <!-- Hero Section -->
+        <section class=" bg-cover bg-center"
+        style="background-image: url('./assets/hero-bg.png');">
+            <div class="max-w-[1140px] mx-auto px-3 py-16 flex flex-col items-center gap-8">
+                <div>
+                    <div class="relative">
+                        <div class="relative flex items-center justify-center place-items-center  w-56 h-56 bg-cover bg-center" style="background-image: url(./assets/hero-circle.png);">
+                            <p class="absolute top-6 bg-green-400 py-1 px-3 font-semibold rounded-md right-1 animate-bounce">New</p>
+                            <img class="w-24 h-24" src="./assets/microphone.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white">
+                    <h2 class="text-4xl lg:text-7xl font-bold mb-2">TechWave</h2>
+                    <p class="text-sm mt-1 text-[#eee]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="flex justify-center gap-4 mt-5 lg:mt-8">
+                        <button class=" text-white bg-gradient-to-br from-purple-600 via-pink-600 via-orange-400 to-yellow-400 px-6 py-2 rounded-sm font-bold flex items-center gap-2"><span><img src="./assets/spotify.png" alt=""></span>Listen On Shopify</button>
+                        <div>
+                            <button class=" text-green-600 border-2 border-green-500 px-6 py-2 rounded-sm font-bold flex items-center gap-2"><span><img src="./assets/message.png" alt=""></span>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </header>
+    <main>
+     <section class="bg-[#1a0b2e]">
+        <div class=" text-center  max-w-[1140px] mx-auto px-3 py-8">
+            <h3 class="text-3xl text-white lg:text-5xl font-bold mb-2 lg:mb-5">About the Podcast</h3>
+            <p class="text-gray-300 text-sm px-2 lg:px-44">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                and share stories of personal growth from industry leaders.
+                    <br>
+                    <br>
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWav
+            </p>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10 border-t border-[rgba(251,207,232,0.3)]">
+                <div class="text-center p-4">
+                    <h3 class="text-green-500 text-4xl font-bold">150K+</h3>
+                    <p class="text-sm text-gray-300">Monthly Listeners</p>
+                </div>
+                <div class="text-center p-4">
+                    <h3 class="text-green-500 text-4xl font-bold">200+</h3>
+                    <p class="text-sm text-gray-300">Episodes Published</p>
+                </div>
+                <div class="text-center p-4">
+                    <h3 class="text-green-500 text-4xl font-bold">4.9<span>&#9733;</span></h3>
+                    <p class="text-sm text-gray-300">Average Rating</p>
+                </div>
+                <div class="text-center p-4">
+                    <h3 class="text-green-500 text-4xl font-bold">50+</h3>
+                    <p class="text-sm text-gray-300">Industry Experts</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
