@@ -6,13 +6,20 @@
     <title>TechWave</title>
     <link rel="stylesheet" href="./css/input.css">
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
       <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
       }
+      .inter{
+        font-family: "Inter", sans-serif;
+      }
     </style>
 </head>
-<body>
+<body class="inter">
     <header>
         <nav class="bg-[#1a0b2e] border-b border-[rgba(251,207,232,0.3)]">
             <div class="flex justify-between max-w-[1140px] mx-auto px-3 py-5">
@@ -28,7 +35,7 @@
                 <li><a class=" rounded-sm" href="">Episodes</a></li>
                 <li><a class=" rounded-sm" href="">Host</a></li>
             </ul>
-            <button class="hidden animate-pulse md:block text-white bg-gradient-to-br from-purple-600 via-pink-600 via-orange-400 to-yellow-400 px-6 py-2 rounded-sm font-bold">Subscribe <span>&#8594;</span></button>
+            <button class="hidden animate-pulse md:block text-white bg-gradient-to-br from-purple-600 via-pink-600 via-orange-400 to-yellow-400 px-6 py-2 rounded-sm font-bold">Subscribe <span><i class="fa-solid fa-arrow-right"></i></span></button>
 
             <ul class="hidden peer-checked:flex md:hidden flex-col gap-4 bg-[#1a0b2e] text-sky-500 py-6 w-full fixed top-20 left-1 rounded-sm justify-center pl-8 z-50">
                 <li><a class=" text-white rounded-sm" href="">About</a></li>
@@ -46,7 +53,7 @@
                     <div class="relative">
                         <div class="relative flex items-center justify-center place-items-center  w-56 h-56 bg-cover bg-center" style="background-image: url(./assets/hero-circle.png);">
                             <p class="absolute top-6 bg-green-400 py-1 px-3 font-semibold rounded-md right-1 animate-bounce">New</p>
-                            <img class="w-24 h-24" src="./assets/microphone.png" alt="">
+                            <img class="w-24 h-24 animate-pulse" src="./assets/microphone.png" alt="">
                             
                         </div>
                     </div>
@@ -69,7 +76,7 @@
      <section class="bg-[#1a0b2e]">
         <div class=" text-center  max-w-[1140px] mx-auto px-3 py-8">
             <h3 class="text-3xl text-white lg:text-5xl font-bold mb-2 lg:mb-5">About the Podcast</h3>
-            <p class="text-gray-300 text-sm px-2 lg:px-44">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+            <p class="text-gray-300 font-medium text-sm px-2 lg:px-44">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
                 We break down complex topics into digestible insights, explore productivity strategies that actually work,
                 and share stories of personal growth from industry leaders.
                     <br>
@@ -160,7 +167,7 @@
                     
                     <div class="px-4 pt-5">
                         <h3 class="text-white text-[18px] font-semibold">The Future of AI in Everyday Life</h3>
-                        <p class="text-gray-300 text-xs mt-1">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <p class="text-gray-400 text-xs mt-1">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
                     </div>
                     <div class="flex items-center gap-2 p-4 pb-6">
                         <img src="./assets/clock.png" alt="">
@@ -174,8 +181,8 @@
                         </div>
                     
                     <div class="px-4 pt-5">
-                        <h3 class="text-white text-[18px] font-semibold">Parenting Masterclass in the Era of Fitna</h3>
-                        <p class="text-gray-300 text-xs mt-1">Effective parenting strategies to stay calm, connected, and confident in the age of fitna.</p>
+                        <h3 class="text-white text-[18px] font-semibold">Parenting Guide in the Era of Fitna</h3>
+                        <p class="text-gray-400 text-xs mt-1">Effective parenting strategies to stay calm, connected, and confident in the age of fitna.</p>
                     </div>
                     <div class="flex items-center gap-2 p-4 pb-6">
                         <img src="./assets/clock.png" alt="">
@@ -190,7 +197,7 @@
                     
                     <div class="px-4 pt-5">
                         <h3 class="text-white text-[18px] font-bold">Career Growth in Tech: A Roadmap</h3>
-                        <p class="text-gray-300 text-xs mt-1">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                        <p class="text-gray-400 text-xs mt-1">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
                     </div>
                     <div class="flex items-center gap-2 p-4 pb-6">
                         <img src="./assets/clock.png" alt="">
@@ -202,12 +209,12 @@
         </section>
         <section class="bg-[#1a0b2e] pb-8 md:pb-12">
             <h2 class="text-center text-white text-3xl md:text-5xl font-semibold mb-6 md:mb-8 px-3">Meet the Host</h2>
-            <div class="max-w-[1140px] md:mx-auto flex items-center flex-col md:flex-row gap-4 md:gap-8 bg-[#250d44] px-3 md:p-10 py-8 ml-3 mr-3 rounded-xl">
+            <div class="max-w-[1140px] md:mx-auto flex items-center flex-col md:flex-row gap-4 md:gap-8 bg-[#250d44] px-3 md:p-10 py-8 ml-3 mr-3 rounded-2xl">
                 <img class="w-56 h-56 rounded-full border-[#562097] border-2" src="./assets/shawon.png" alt="">
                 <div class="flex flex-col items-center md:items-start gap-4">
                     <div>
                         <h2 class="text-xl font-bold text-white text-center md:text-start mb-1">MOHAMMAD SHAWON</h2>
-                    <p class="text-gray-300 text-sm text-center md:text-start">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                    <p class="text-gray-300 text-sm font-medium text-center md:text-start">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
                     </div>
                     <div class="flex items-center gap-3">
                         <img class="w-8 h-8 p-1 rounded-full border border-pink-400 object-contain cursor-pointer" src="./assets/Group.png" alt="">
@@ -219,8 +226,37 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="py-48 px-3"  style="background-image: url(./assets/footer-bg.png);">
+        <div class="max-w-[1140px] mx-auto flex flex-col items-center text-gray-300">
+            <img src="./assets/TechWave.png" alt="">
+            <div class="grid grid-cols-2 md:grid-cols-4 place-items-center justify-center gap-6 mt-5">
+               <div class="flex items-center gap-2">
+                <img src="./assets/spotify.png" alt="">
+                <div>
+                    <p class="font-semibold">Shopify</p>
+                </div>
+               </div> 
+               <div class="flex items-center gap-2">
+                <img src="./assets/apple-podcast.png" alt="">
+                <div>
+                    <p class="font-semibold">Apple Podcasts</p>
+                </div>
+               </div> 
+               <div class="flex items-center gap-2">
+                <img src="./assets/youtube-podcast.png" alt="">
+                <div>
+                    <p class="font-semibold">YouTube</p>
+                </div>
+               </div> 
+               <div class="flex items-center gap-2">
+                <img src="./assets/twitter.png" alt="">
+                <div>
+                    <p class="font-semibold">Twitter</p>
+                </div>
+               </div> 
+            </div>
+        </div>
+            <p class=" text-xs pt-10 border-t mt-10 text-center text-gray-400 max-w-[1140px] mx-auto">© 2026 TechWave Podcast. All rights reserved.</p>
     </footer>
 </body>
 </html>
